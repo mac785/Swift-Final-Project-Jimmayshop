@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photos DrawVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PhotosDrawVC" customModule="Jimmayshop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="RcX-em-yWe">
+                                <rect key="frame" x="22.5" y="507" width="330" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW0-VY-cNF" customClass="ColorButton" customModule="Jimmayshop" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="QCI-h9-6Ps"/>
+                                            <constraint firstAttribute="height" constant="45" id="YuT-jk-Q6a"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="buttonNumber">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="colorChangerWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cvV-La-z2u"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdT-1T-efK" customClass="ColorButton" customModule="Jimmayshop" customModuleProvider="target">
+                                        <rect key="frame" x="57" y="0.0" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="kke-Vr-ZU9"/>
+                                            <constraint firstAttribute="width" constant="45" id="mfU-sT-US5"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="buttonNumber">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="colorChangerWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mcy-fV-pzf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naW-vD-7aK" customClass="ColorButton" customModule="Jimmayshop" customModuleProvider="target">
+                                        <rect key="frame" x="114" y="0.0" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="1xK-oN-pQT"/>
+                                            <constraint firstAttribute="height" constant="45" id="xfF-lR-Ip9"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="buttonNumber">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="colorChangerWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="asF-Wb-Sr0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2v-kZ-vBa" customClass="ColorButton" customModule="Jimmayshop" customModuleProvider="target">
+                                        <rect key="frame" x="171" y="0.0" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="fxB-7k-S9W"/>
+                                            <constraint firstAttribute="height" constant="45" id="uVq-zi-bEM"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="buttonNumber">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="colorChangerWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMF-4u-RuR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCu-N8-vNj" customClass="ColorButton" customModule="Jimmayshop" customModuleProvider="target">
+                                        <rect key="frame" x="228" y="0.0" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="5RE-bI-u7g"/>
+                                            <constraint firstAttribute="height" constant="45" id="94i-yA-f2s"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="buttonNumber">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="colorChangerWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B4Z-cu-9AN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySj-9c-hWq" customClass="ColorButton" customModule="Jimmayshop" customModuleProvider="target">
+                                        <rect key="frame" x="285" y="0.0" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="COz-Jr-yz8"/>
+                                            <constraint firstAttribute="width" constant="45" id="V0W-Qz-j69"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Stamp">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="buttonNumber">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="colorChangerWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="asX-dn-WJM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAy-za-Tlj" customClass="DrawView" customModule="Jimmayshop" customModuleProvider="target">
+                                <rect key="frame" x="26" y="30" width="323" height="467"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6n2-jj-apR">
+                                <rect key="frame" x="140" y="617" width="94" height="30"/>
+                                <state key="normal" title="Import Stamp"/>
+                                <connections>
+                                    <action selector="handleAddFromLibraryWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bSU-gL-buE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cag-ze-yc4">
+                                <rect key="frame" x="121" y="572" width="132" height="30"/>
+                                <state key="normal" title="Import Background"/>
+                                <connections>
+                                    <action selector="handleAddFromLibraryWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wyA-kC-qkN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99984688057687698" green="1" blue="0.4690602855136532" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HAy-za-Tlj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="H2E-Zm-rvj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6n2-jj-apR" secondAttribute="bottom" constant="20" id="Mw9-xy-SZQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HAy-za-Tlj" secondAttribute="trailing" constant="10" id="f4Q-AR-l3T"/>
+                            <constraint firstItem="RcX-em-yWe" firstAttribute="top" secondItem="HAy-za-Tlj" secondAttribute="bottom" constant="10" id="hM9-QE-GUi"/>
+                            <constraint firstItem="RcX-em-yWe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="htk-bh-Ydo"/>
+                            <constraint firstItem="cag-ze-yc4" firstAttribute="top" secondItem="RcX-em-yWe" secondAttribute="bottom" constant="20" id="ji6-zE-bu7"/>
+                            <constraint firstItem="6n2-jj-apR" firstAttribute="top" secondItem="cag-ze-yc4" secondAttribute="bottom" constant="15" id="mGI-21-P9f"/>
+                            <constraint firstItem="cag-ze-yc4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mL6-qr-8bO"/>
+                            <constraint firstItem="HAy-za-Tlj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="uXY-yj-iRf"/>
+                            <constraint firstItem="6n2-jj-apR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xhH-dy-1ha"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="primaryView" destination="HAy-za-Tlj" id="uHC-r3-xst"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
